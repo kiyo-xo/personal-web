@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="iconjpg.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">XO.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skill</a>
+            <a href="#contact">Contact</a>
+            <a href="#feedback">Feedback</a>
+        </nav>
+        <div class="bx bx-menu" id="menu-icon">
+
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>I'm John Justine de Guzman</h1>
+            <h3>Programmer</h3>
+            <p>I find learning and exploring new things on coding a fun way to spend my time everyday. 
+            In the near future, I aim to become a skilled backend developer. I will do my best to achieve 
+            my goals even if it costs me my 20s.
+            </p>
+        </div>
+        <div class="home-img">
+            <img src="prof.jpg">
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="main-text">
+            <h2>My Skills</h2>
+        </div>
+            <div class="skills-content">
+                <div class="box">
+                    <div class="s-icons">
+                        <i class='bx  bx-code-alt'></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="progress-container">
+                        <div class="progress-bar backend"></div>
+                    </div>
+                    <p>I can say programming backend is what I excel the most because I can express myself by expressing my thoughts in the form of syntaxes. If something catches my attention it will ignite my eagerness to build new things in of backend development.</p>
+                </div>
+
+            <div class="box">
+                    <div class="s-icons">
+                        <i class='bx bx-palette'></i> 
+                    </div>
+                    <h3>Creative Design</h3>
+                    <div class="progress-container">
+                        <div class="progress-bar creative"></div>
+                    </div>
+                    <p>Designing is my weakness but I'm trying to let myself out of my comfort zone and I'm willing to learn how to design effectively and beautifully. I can say that this skill is what I'm developing but I hope in future this will be one of my best skills.</p>
+            </div>
+
+            <div class="box">
+                    <div class="s-icons">
+                        <i class='bx bx-brush'></i> 
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="progress-container">
+                        <div class="progress-bar frontend"></div>
+                    </div>
+                    <p>Frontend Development and Creative Design is almost the same, yes. but Frontend Development is Designing with a mixed of programming so I can say that I grasp this skill much more than Creative Designing.</p>
+            </div>
+            </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="feedback" id="feedback">
+        <div class="feedback-box">
+            <input type="range" min="0" max="4" value="2" oninput="emoji.innerText = ['🤬', '😡', '😐', '😊', '🥰'][this.value]">
+            <p id="emoji">😐</p>
+            <form action="#" method="POST" class="feedback-form">
+                <div class="form-group">
+                    <label for="feedback-type">Choose Feedback Type</label>
+                    <select id="feedback-type" name="feedback-type">
+                        <option value="bug">Bug Report</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="praise">Praise</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Write Comments</label>
+                    <textarea id="comments" name="comments" rows="5" placeholder="Your feedback here..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+        <p>&copy; 2025 John Justine de Guzman. All rights reserved.</p>
+
+        <nav class="footer-nav">
+            <a href="#home">Home</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#contact">Contact</a> |
+            <a href="#feedback">Feedback</a>
+        </nav>
+
+        <p>Contact: <a href="mailto:joma.deguzman.sjc@phinmaed.com">joma.deguzman.sjc@phinmaed.com</a></p>
+
+        <div class="social-icons">
+            <a href="https://web.facebook.com/jjdg21/" title="Facebook" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.linkedin.com/in/johnjustinedeguzman/" title="LinkedIn" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/kiyo-xo" title="GitHub" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <p class="quote">I'm a prisoner to my decisions – Abel Tesfaye</p>
+
+        <a href="#home" class="back-to-top">Back to Top ↑</a>
+        </div>
+</footer>
+
+</body>
+</html>
